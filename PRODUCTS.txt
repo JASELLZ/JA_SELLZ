@@ -1,0 +1,26 @@
+JA_SELLZ PRODUCT EDITING
+
+You only need to edit products.json to change products, prices, or pictures.
+
+PRICE
+Change the number after "price". Example: "price": 65
+
+PICTURE
+1. Put your new picture inside the images folder.
+2. Change the "image" value to the exact filename. Example: "image": "my-new-hoodie.jpg"
+
+NAME
+Change the text after "name" if you want to change the product name.
+
+CATEGORY
+Use Clothes or Fragrances (or another category if you want).
+
+Example:
+{
+  "name": "My Hoodie",
+  "category": "Clothes",
+  "image": "my-hoodie.jpg",
+  "price": 65
+}
+
+After editing products.json and adding the picture, upload/redeploy the store. No other website file needs to be changed.
