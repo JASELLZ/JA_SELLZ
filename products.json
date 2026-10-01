@@ -1,50 +1,10 @@
 [
-  {
-    "name": "Denim Tears Flower Hoodie",
-    "category": "Clothes",
-    "image": "hoodie-flower.jpg",
-    "price": 65
-  },
-  {
-    "name": "Sp5der Black Logo Hoodie",
-    "category": "Clothes",
-    "image": "hoodie-supreme.jpg",
-    "price": 65
-  },
-  {
-    "name": "Chrome Hearts Black Hoodie",
-    "category": "Clothes",
-    "image": "hoodie-black.jpg",
-    "price": 80
-  },
-  {
-    "name": "Sp5der Blue Web Hoodie",
-    "category": "Clothes",
-    "image": "hoodie-blue.jpg",
-    "price": 65
-  },
-  {
-    "name": "Sp5der Black Web Hoodie",
-    "category": "Clothes",
-    "image": "hoodie-spider.jpg",
-    "price": 65
-  },
-  {
-    "name": "Essentials Light Gray Hoodie",
-    "category": "Clothes",
-    "image": "essentials-gray.jpg",
-    "price": 50
-  },
-  {
-    "name": "Essentials Black Hoodie",
-    "category": "Clothes",
-    "image": "essentials-black.jpg",
-    "price": 50
-  },
-  {
-    "name": "Jean Paul Gaultier Fragrance",
-    "category": "Fragrances",
-    "image": "fragrance-cans.jpg",
-    "price": 50
-  }
+  {"name":"Denim Tears Flower Hoodie","category":"Clothes","image":"hoodie-flower.jpg","images":["hoodie-flower.jpg"],"price":65,"stock":0,"sizes":{"S":0,"M":0,"L":0,"XL":0}},
+  {"name":"Sp5der Black Logo Hoodie","category":"Clothes","image":"hoodie-supreme.jpg","images":["hoodie-supreme.jpg"],"price":65,"stock":0,"sizes":{"S":0,"M":0,"L":0,"XL":0}},
+  {"name":"Chrome Hearts Black Hoodie","category":"Clothes","image":"hoodie-black.jpg","images":["hoodie-black.jpg"],"price":80,"stock":0,"sizes":{"S":0,"M":0,"L":0,"XL":0}},
+  {"name":"Sp5der Blue Web Hoodie","category":"Clothes","image":"hoodie-blue.jpg","images":["hoodie-blue.jpg"],"price":65,"stock":0,"sizes":{"S":0,"M":0,"L":0,"XL":0}},
+  {"name":"Sp5der Black Web Hoodie","category":"Clothes","image":"hoodie-spider.jpg","images":["hoodie-spider.jpg"],"price":65,"stock":0,"sizes":{"S":0,"M":0,"L":0,"XL":0}},
+  {"name":"Essentials Light Gray Hoodie","category":"Clothes","image":"essentials-gray.jpg","images":["essentials-gray.jpg"],"price":50,"stock":0,"sizes":{"S":0,"M":0,"L":0,"XL":0}},
+  {"name":"Essentials Black Hoodie","category":"Clothes","image":"essentials-black.jpg","images":["essentials-black.jpg"],"price":50,"stock":0,"sizes":{"S":0,"M":0,"L":0,"XL":0}},
+  {"name":"Jean Paul Gaultier Fragrance","category":"Fragrances","image":"fragrance-cans.jpg","images":["fragrance-cans.jpg","fragrance-receipt.jpg"],"price":50,"stock":0,"sizes":{}}
 ]

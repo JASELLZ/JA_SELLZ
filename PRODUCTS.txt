@@ -1,26 +1,25 @@
-JA_SELLZ PRODUCT EDITING
+JA_SELLZ PRODUCT + INVENTORY GUIDE
 
-You only need to edit products.json to change products, prices, or pictures.
+The storefront now has product detail pages, multiple photos, size selection, stock tracking, and a protected admin page.
 
-PRICE
-Change the number after "price". Example: "price": 65
+ADMIN
+1. In Render Environment Variables, add ADMIN_PASSWORD with a strong password.
+2. Open https://YOUR-STORE.onrender.com/admin.html
+3. Log in with that password.
+4. Change price, total stock, size stock, and upload additional photos.
+5. Click Save changes.
 
-PICTURE
-1. Put your new picture inside the images folder.
-2. Change the "image" value to the exact filename. Example: "image": "my-new-hoodie.jpg"
+PRODUCT DATA
+Each product in products.json supports:
+- name
+- category
+- price
+- stock
+- sizes (for example S/M/L/XL)
+- image (main image)
+- images (gallery images)
 
-NAME
-Change the text after "name" if you want to change the product name.
+All current stock quantities and size quantities are intentionally 0.
 
-CATEGORY
-Use Clothes or Fragrances (or another category if you want).
-
-Example:
-{
-  "name": "My Hoodie",
-  "category": "Clothes",
-  "image": "my-hoodie.jpg",
-  "price": 65
-}
-
-After editing products.json and adding the picture, upload/redeploy the store. No other website file needs to be changed.
+IMPORTANT STORAGE NOTE
+The admin page writes inventory to products.json on the server. Render's normal filesystem can be reset when a service is rebuilt/redeployed. For permanent inventory management, use a persistent disk or database. Do not rely on the admin page as permanent storage until that is configured.
