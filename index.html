@@ -34,7 +34,7 @@ footer{border-top:1px solid var(--line);padding:30px 20px;color:#888;text-align:
 </style>
 </head>
 <body>
-<div class="top">WELCOME TO JA_SELLZ • 7-DAY REFUND POLICY</div>
+<div class="top">PLEASE READ THIS BEFORE BUYING • ALL SALES ARE FINAL AND THERE ARE NO RETURNS.</div>
 <header><nav class="nav">
 <div class="logo">ja_sellz</div>
 <div class="navlinks"><a href="#shop">Shop</a><a href="#policy">Policy</a><a href="#contact">Contact</a></div>
@@ -61,7 +61,7 @@ footer{border-top:1px solid var(--line);padding:30px 20px;color:#888;text-align:
 </section>
 
 <section id="policy" class="about">
-<div class="panel"><h3>Refunds</h3><p>Refunds are allowed within 7 days of purchase. Contact ja_sellz to start a refund request.</p></div>
+<div class="panel"><h3>Refunds</h3><p>ALL SALES ARE FINAL AND THERE ARE NO RETURNS.</p></div>
 <div class="panel"><h3>Payments</h3><p>Checkout uses Stripe-hosted secure checkout for credit/debit cards. Apple Pay can appear automatically for eligible customers and devices when enabled by Stripe.</p><div class="payment"><span>Apple Pay</span><span>Card</span></div></div>
 <div class="panel" id="contact"><h3>Questions?</h3><p>For sizing, availability, shipping or product questions, contact the seller before purchasing.</p></div>
 </section>
@@ -84,7 +84,7 @@ async function loadProducts(){
   const r = await fetch('products.json?cache=' + Date.now());
   if(!r.ok) throw new Error('Could not load products.json');
   products = await r.json();
-  renderProducts();
+  render();
 }
 
 let cart = JSON.parse(localStorage.getItem('ja_sellz_cart') || '[]');
@@ -129,6 +129,8 @@ async function checkout(){
  }catch(e){alert(e.message);btn.disabled=false;btn.textContent=old;}
 }
 render();
+
+loadProducts().catch(err => { console.error(err); document.getElementById("grid").innerHTML = "<p>Products could not be loaded.</p>"; });
 </script>
 
 <div class="shipping-policy" style="margin-top:12px;">
@@ -137,4 +139,3 @@ render();
 
 </body>
 </html>
-loadProducts().catch(err => { console.error(err); document.getElementById("grid").innerHTML = "<p>Products could not be loaded.</p>"; });

@@ -65,7 +65,7 @@ async function createCheckoutSession(req, res) {
       params.set('customer_creation', 'always');
       params.set('submit_type', 'pay');
       params.set('metadata[store]', 'ja_sellz');
-      params.set('metadata[refund_policy]', 'Refund requests accepted within 7 days of purchase');
+      params.set('metadata[refund_policy]', 'All sales final; no returns');
 
       let index = 0;
       for (const [name, quantity] of counts) {
